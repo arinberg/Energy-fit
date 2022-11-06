@@ -1,0 +1,192 @@
+.results {
+  margin-top: 28px;
+}
+
+.results__wrapper {
+  padding: 0 20px;
+  min-height: 880px;
+  background-color: #EAEAEA;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    min-height: 740px;
+
+    @media (min-width: $desktop-width) {
+      padding: 0 110px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 540px;
+    }
+  }
+}
+
+.results__blocks {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+
+  @media (min-width:$desktop-width) {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .results__blocks--tablet {
+    padding-top: 29px;
+    display: flex;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .results__blocks--desktop {
+    width: 440px;
+  }
+}
+
+.results__title {
+  padding-top: 28px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+
+  @media (min-width:$tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.results__description {
+  padding-top: 32px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: justify;
+  color: #444444;
+
+  @media (min-width:$tablet-width) {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    @media (min-width:$desktop-width) {
+      padding-top: 140px;
+    }
+  }
+}
+
+.results__blocks--fieldset {
+  width: 124px;
+  height: 64px;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #CDCDCD;
+  border-radius: 4px;
+
+  @media (min-width:$tablet-width) {
+    width: 162px;
+    height: 77px;
+  }
+}
+
+.results__blocks--value {
+  padding-top: 6px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+
+  @media (min-width:$tablet-width) {
+    padding-top: 10px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.results__blocks--legend {
+  position: absolute;
+  bottom: -16px;
+  left: 2px;
+  margin: 0 16px;
+  background-color: #EAEAEA;
+
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    bottom: -4px;
+    left: 12px;
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .results__blocks--legend-tablet-mod {
+    position: absolute;
+    left: 24px;
+  }
+}
+
+.results__food-costs {
+  margin-top: 28px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-left: auto;
+    width: 174px;
+    text-align: end;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .results__before-after {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .results__before-after--image-before {
+    height: 280px;
+
+    @media (min-width:$desktop-width) {
+      padding-top: 80px;
+    }
+  }
+
+  .results__before-after--image-after {
+    height: 280px;
+
+    @media (min-width:$desktop-width) {
+      padding-top: 80px;
+    }
+  }
+}
+
+.results__before-after--blocks {
+  margin-top: 45px;
+  text-align: center;
+}
+
+.results__text-before-after {
+  padding-top: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
